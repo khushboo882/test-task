@@ -1,0 +1,2 @@
+export const GETARTICLES = "GETARTICLES"
+export const GETFRIENDS = "GETFRIENDS";

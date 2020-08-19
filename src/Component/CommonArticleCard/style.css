@@ -1,0 +1,21 @@
+.ui .button{
+    background-color: #3b6978;
+    color: #ffffff;
+    float: right;
+}
+
+.ui .button:hover,
+.ui .button:focus{
+    background-color: #204051;
+    color: #ffffff;
+}
+
+.ui.card>.content>.header.customHeader,
+.ui.cards>.card>.content>.header.customHeader
+{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}

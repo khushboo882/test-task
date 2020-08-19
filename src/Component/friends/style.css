@@ -1,0 +1,74 @@
+.containerWrapper .grid .itemsWrapper .listWrapper {
+    flex: 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 28px;
+}
+.itemsWrapper .listWrapper .card {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 10px 6px -6px rgba(119, 119, 119, 0.4), 0px 2px 6px 4px rgba(119, 119, 119, 0.2);
+}
+.itemsWrapper .listWrapper .card:hover {
+    box-shadow: 0 10px 6px -6px rgba(119, 119, 119, 0.65), 0px 2px 6px 4px rgba(119, 119, 119, 0.5);
+}
+.listWrapper .itemHead {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.listWrapper .card .itemHead .itemImg {
+    width: 80px;
+    height: 80px;
+    border-radius: 100% !important;
+    overflow: hidden;
+}
+.listWrapper .itemImg .image {
+    height: 100%;
+}
+
+.listWrapper .itemImg .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.listWrapper .itemHead .header {
+    flex: 1;
+    font-size: 18px;
+    color: #204051;
+    margin-top: 5px;
+}
+
+.listWrapper .itemHead .itemText {
+    margin-left: 15px;
+    flex: 1 calc(100% - 95px);
+}
+
+.containerWrapper  {
+    padding-top: 85px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .containerWrapper .grid .itemsWrapper .listWrapper {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .containerWrapper .grid .itemsWrapper .listWrapper {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .containerWrapper .grid .itemsWrapper .listWrapper {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .containerWrapper {
+        padding-top: 100px;
+    }
+}

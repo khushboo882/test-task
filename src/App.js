@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import rootReducer from './Reducers';
+import Articles from "./Component/articles";
+import Friends from "./Component/friends"
+
+export const store = createStore(rootReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Provider store={store}>
+        <BrowserRouter>
+          <React.Fragment>
+            <Switch>
+              <Route exact path={'/'} render={() => {
+                return <Redirect to={'/home'}/>
+              }}/>
+              <Route exact path={'/home'} component={Articles}/>
+              <Route exact path={'/friends'} component={Friends}/>
+            </Switch>
+          </React.Fragment>
+        </BrowserRouter>
+      </Provider>
   );
 }
 

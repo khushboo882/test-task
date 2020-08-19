@@ -1,0 +1,60 @@
+.customModal.modal .close {
+    top: 12px;
+    right: 12px;
+    color: #204051;
+}
+
+.customModal.ui.small.modal {
+    width: 500px;
+    margin: 0;
+}
+
+.customModal.modal .header {
+    color: #204051;
+}
+.customModal .content .image {
+  padding: 1rem !important;
+}
+.ui.modal .scrolling.content {
+    max-height: calc(80vh);
+    overflow: auto;
+}
+
+.customModal .content .image img {
+    border: 1px solid #989898;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.customModal .description span {
+    font-size: 14px;
+    color: #204051;
+    font-weight: bold;
+}
+
+.customModal .description label {
+    font-size: 14px;
+    color: #204051;
+    margin-left: 5px;
+}
+
+.ui.modal.customModal >.image.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.scrolling.dimmable.dimmed>.dimmer {
+    justify-content: center;
+}
+@media screen and (max-width: 767px) and (min-width:520px){
+    .customModal.ui.small.modal {
+        width: 500px;
+    }
+}
+@media screen and (max-width: 520px) {
+ .customModal.ui.small.modal {
+     width: 95vw;
+ }
+}

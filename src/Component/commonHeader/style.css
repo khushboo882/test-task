@@ -1,0 +1,36 @@
+.headerWrapper {
+    background-color: #204051;
+    height: 58px;
+    position: fixed;
+    z-index: 6;
+    width: 100%;
+}
+.headerWrapper .header-row {
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.headerWrapper h2 {
+ color: #e4e3e3;
+}
+.itemWrapper {
+    justify-content: flex-end;
+}
+.menuItem {
+    padding: 10px;
+    font-size: 20px;
+    color: #e4e3e3;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.menuItem:hover,
+.menuItem:active {
+    color: #e4e3e3;
+    background: #3b6978;
+}
+@media  screen and (max-width: 480px) {
+    .headerWrapper {
+        height: 82px;
+    }
+}

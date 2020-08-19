@@ -1,0 +1,97 @@
+.articleCard .image {
+    height: 100%;
+    border-radius: inherit;
+
+}
+.imgWrapper {
+    height: 216px;
+    position: relative;
+
+}
+.ui.card.articleCard .image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    border-radius: inherit;
+
+}
+.background {
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: inherit;
+}
+.ui.card.articleCard .meta {
+    position: absolute;
+    top: 185px;
+    color: #84a9ac;
+}
+.ui.card.articleCard .header {
+    color: #e4e3e3;
+    position: absolute;
+    top: 140px;
+    left: 0;
+    padding: 0 10px;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.ui.card.articleCard .description {
+    max-height: 57px;
+    overflow: auto;
+}
+.mainContainer  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+}
+.ui.card.articleCard {
+    margin-bottom: 30px;
+    height: 95%;
+    width: 100%;
+}
+
+.mainContainer .articleWrapper {
+    padding-top: 58px;
+}
+.articleWrapper .grid .articleItem {
+    padding-top: 40px;
+}
+@media only screen and (max-width: 767px) {
+    .articleWrapper .grid .articleItem .articleCardWrapper {
+        flex: 100%;
+        max-width: 100%;
+        margin-bottom: 0;
+    }
+    .ui.container {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .articleWrapper .grid .articleItem {
+        padding-top: 60px;
+    }
+    .articleWrapper .grid .articleItem .articleCardWrapper {
+        margin-bottom: 20px;
+    }
+    .articleWrapper .articleCard {
+        flex-direction: column;
+    }
+    .articleWrapper .articleCard .image,
+    .articleWrapper .articleCard .content {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .articleWrapper .articleCardWrapper:nth-child(2n+2) .articleCard {
+        flex-direction: column;
+    }
+    .articleWrapper .articleCardWrapper:nth-child(2n+2) .articleCard .content {
+        text-align: left;
+    }
+}
